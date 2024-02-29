@@ -1,0 +1,264 @@
+/*#2D2F33-shark
+#B59B90-thatch
+#64A6C0-fountain blue
+#4F86A3-wedgewood 
+--davys-gray: #555D61ff;
+--night: #100D0Eff;
+--rose-taupe: #816055ff;
+--indigo-dye: #1E3F56ff;
+--raisin-black: #1F1A1Dff;
+--night-2: #121217ff;
+ */
+
+ /*Global styles
+ --------------------------------*/
+ /* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;/* set defalt to 10px */
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+html,body{
+   height: 100%;
+}
+body {
+    background:#2D2F33;
+    margin: 0;
+    color: lightblue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+h1,h2,h3{
+  font-family: 'Timmana', sans-serif;
+  margin: 0;
+  font-weight: 500;
+}
+h1{
+  font-size: 6.75rem;
+  line-height: 0.8;
+}
+
+h2{
+  font-size: 3.5rem;
+}
+h3{
+  font-size:2.4rem;
+}
+.content-wrapper{
+   margin: 0 auto;
+   padding: 30px;
+   max-width:900px ;
+}
+/*links*/
+a{
+    color:aqua ;
+}
+a:hover{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+
+  /*home
+ --------------------------------*/
+ .home{
+    background: url(../placeholder-images/bdtech.png) no-repeat ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+ }  
+ .home .content-wrapper{
+    
+    flex: 1 0 auto;
+ }
+ .BTN{
+    background:#816055ff;
+    color: #f6f6f6;
+    text-decoration: none;
+    color: aqua;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 5px;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    border-radius: 5px;
+
+ }
+ .content-bg{
+  background: rgb(45 47 51 / 0.9);
+  padding: 30px;
+
+ }
+@media screen and (max-width:645px){
+  .home .content-wrapper{
+    padding:10px;
+  }
+  .content-bg{
+    padding:20px;
+  }
+}
+  /*resume
+ --------------------------------*/
+ .resume header::before{
+   background: url(../placeholder-images/bdtech.png) ;
+   background-position: center;
+   background-size:cover;
+   
+   
+   content: "";
+   display: block;
+   height: 300px;
+
+ }
+ 
+ .resume-section{
+   margin-bottom: 50px;
+
+ }
+.resume-section h2{
+   border-bottom: 2px solid aqua;
+}
+.download-link{
+   position: fixed;
+   top: 5px;
+   left: 5px;
+   font-size: 1.6rem
+}
+@media screen and (max-width:1200px) {
+  .download-link{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 1.6rem
+ }
+}
+@media screen and (max-width:515px){
+  .resume header::before{
+    height: 200px;
+  }
+  h1{
+    font-size: 5.125rem;
+  }
+  h2{
+    font-size:3.1rem;
+  }
+}
+#abc a:hover{
+  color: greenyellow;
+  
+  
+}
+
+
+
+ 
+
+  /*project
+ --------------------------------*/
+ .project-item{
+   margin: 30px 0;
+ }
+ .project-item img{
+   width: 300px;
+   
+ }
+ @media screen and (min-width:810px){
+  .project-item{
+    display: flow-root;
+  } 
+  .project-item img{
+    float: left;
+    margin-right: 20px;
+  }
+ }
+ @media screen and (min-width:600px) and (max-width:809px){
+    .project-wrapper{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 20px;
+    }
+    .project-item img{
+      width: 100%;
+    }
+ }
+ @media screen and (max-width:500px){
+  .project-item img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+ }
+
+  /*work experience
+ --------------------------------*/
+ .work-item{
+  margin: 30px 0;
+  
+ }
+
+.work-details p{
+  margin: 0;
+}
+
+@media  screen and (min-width:730px){
+  .work-item{
+    display: flex;
+    grid-template-columns:300px 1fr;
+    column-gap: 20px;
+  }
+  .work-summary p:first-child{
+    margin-top: 0;
+  }
+ }
+  /*education
+ --------------------------------*/
+ .education-item{
+  margin: 30px 0;
+ }
+.education-item p{
+  margin: 0;
+}
+  /*footer
+ --------------------------------*/
+ footer{
+    background: #121217ff;
+    color: #d3d4d6;
+    
+ }
+ footer a{
+    color: aliceblue;
+ }
+ .socials{
+   list-style-type:none;
+   padding: 0;
+   
+ }
+ .socials li{
+   display:inline-block;
+   margin-left: 10px;
+ }
+ .socials img{
+   width: 32px;
+ }
+ .socials img:hover{
+   opacity: 0.5;
+ }
+
+@media screen and (min-width:650px) {
+  footer{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width:649px){
+  footer{
+    text-align: center;
+    padding:10px;
+  }
+}
